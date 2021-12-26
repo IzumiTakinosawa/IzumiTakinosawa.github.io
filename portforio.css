@@ -1,0 +1,210 @@
+header {
+    background-color: rgb(31, 30, 32);
+    position: fixed;
+    padding-right: 100%;
+}
+
+.contents {
+  padding-top: 75px;
+}
+
+.title {
+    color: white;
+    display: inline-block;
+}
+
+img {
+  content-visibility: auto;
+}
+
+.main {
+  padding-left: 10px;
+}
+
+/*
+#menu {
+  display: flex;
+  flex-direction: column;
+  font-family: serif serif;
+  text-align: center;
+}
+
+ホバーアクション
+#home {
+  transition: 1s all;
+  color: black;
+}
+#home:hover {
+  transform: scale(1.3);
+  transition:1s all;
+}
+
+#profile {
+  transition: 1s all;
+  color: black;
+}
+#profile:hover {
+  transform: scale(1.3);
+  transition:1s all;
+}
+
+#work {
+  transition: 1s all;
+  color: black;
+}
+#work:hover {
+  transform: scale(1.3);
+  transition:1s all;
+}
+
+#contact {
+  transition: 1s all;
+  color: black;
+}
+#contact:hover {
+  transform: scale(1.3);
+  transition:1s all;
+}
+
+
+/*縦線
+#menu:after {
+  content: "";
+  width: 4px;
+  height: 100%;
+  position: absolute;
+  left: 100%;
+  background: rgba(0, 0, 0, .8);
+}
+*/
+
+/*ワークスページ*/
+.grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+}
+
+.grid-practical {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 200px 2fr;
+}
+
+.works {
+  border-radius: 10px;
+  background: rgb(144, 255, 144);
+  padding: 5px;
+  text-align: center;
+}
+
+.works:hover{
+  opacity: 50%;
+  cursor: pointer;
+}
+
+.hidden {
+  height: 0;
+  padding: 0;
+  overflow: scroll;
+  opacity: 0;
+  transition: 0.8s;
+}
+
+
+input {
+  display: none;
+}
+
+.checkbox:checked + .hidden{
+  padding: 10px 0;
+  display: block;
+  width: 90vw;
+  height: 50vw;
+  opacity: 1;
+}
+
+/*ポップアップ*/
+.btn-open{
+  background-color: #fff;
+  border-radius: 10px;
+  color: #fff;
+  width: 95%;
+}
+
+.popup {
+  background-color: #efefef;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, .8);
+  display: none;
+  position: fixed;
+  overflow-y: auto;
+}
+
+.popup-character1 {
+  background-color: #efefef;
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, .8);
+  display: none;
+  position: fixed;
+  overflow-y: auto;
+}
+
+#popup-on {
+  display: none;
+}
+
+#character1 {
+  display: none;
+}
+
+#popup-on:checked + .popup{
+  display: block;
+  margin: 0px 100px 0px 30px;
+  width: 55vw;
+  height: 500px;
+}
+
+#character1:checked + .popup-character1{
+  display: block;
+  width: 55vw;
+  height: 35vw;
+}
+
+.Close-icon {
+  background: rgb(65, 65, 65);
+  color: rgb(117, 117, 117);
+  font-size: 30px;
+  padding: 0 15px;
+  position: absolute;
+  right: 0;
+}
+.Close-icon:hover{
+  background: red;
+  color: #fff;
+}
+
+.popup-content{
+  margin: auto;
+  width: 90%;
+}
+
+.grid-popup {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+}
+
+.works-popup{
+  border-radius: 10px;
+  background: rgb(144, 255, 144);
+  padding: 5px;
+  text-align: center;
+}
+
+/*プロフィールページ*/
+.media {
+  padding-top: 10px;
+}
+.media-body {
+  padding-top: 10px;
+  padding-left: 10px;
+}
