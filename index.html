@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title>My Portforio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./portforio.css">
+    <script src="./portforio.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js" type="text/javascript">
+    </script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">My Portforio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#works">Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#profile">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="container-fluid contents">
+        <div class="row">
+            <!--
+               <div id="menu" class="col-sm-4">
+                <h4>home</h4>
+            </div> 
+            -->
+            <div class="main">
+                <a id="home">
+                    <h3>Home</h3>
+                </a>
+                <p>東洋大学情報連携学部情報連携学科<br>
+                    滝野澤泉のポートフォリオサイトです
+                </p>
+                <hr color="black" size="8px">
+                <a id="works">
+                    <h3>Works</h3>
+                </a>
+                <div class="main">
+                    <h4>実習(チーム制作)課題</h4>
+                    <div class="grid">
+                        <div class="hidden-box">
+                            <label for="label1"><img class="works" src="../img/実習/メインビジュアル.png" width="200px"></label>
+                            <input type="checkbox" id="label1" class="checkbox">
+                            <div class="text hidden">
+                                <h4>対戦型ボードゲーム:下剋上</h4>
+                                <p>ゲーム性:対戦型ボードゲーム<br>
+                                    タイトル:下剋上<br>
+                                    特徴:カードで一発逆転可能な対戦戦略ボードゲーム<br>
+                                    対象年齢:10代～<br>
+                                    キャッチコピー:Unexpected Royal Battle
+                                </p>
+                                <h4>基本ルール</h4>
+                                <p>・ターン制ゲーム。30ターンたつと終了。<br>
+                                    ・ポイント制ゲームで、ポイントが多いほうが勝ち<br>
+                                    ・ボードは2人用は8×11マス、4人用は8×14マスをクロスさせた形<br>
+                                    ・ボードとコマにはそれぞれポイントが配置されていて、ボードのポイントはプレイヤーにはみえず、マイナスのマスもある。一度踏まれたマスのポイント0になる。<br>
+                                    ・カードをボードに配置できる。カードが置かれてもマスのポイントは存在する。<br>
+                                    ・コマはそれぞれ皇帝×1、プリンセス×1、ナイト×6、メイド×8(5点、3点、2点、1点)<br>
+                                    ・相手のコマを獲得するには、カード上のバトルで勝利しなければならない<br>
+                                </p>
+                                <h4>コマの種類</h4>
+                                <div class="grid-popup">
+                                    <div class="works-popup">
+                                        <img width="200px" src="../img/実習/皇帝.png">
+                                        <img width="200px" src="../img/実習/キング_動き方.png">
+                                        <p>名称:皇帝<br>
+                                            コマの動き:将棋の竜(飛車の裏)<br>
+                                            (縦横すべてのマス もしくは斜め1マス)
+                                        </p>
+                                    </div>
+                                    <div class="works-popup">
+                                        <img width="200px" src="../img/実習/ナイト.png">
+                                        <img width="200px" src="../img/実習/ナイト_動き方.png">
+                                        <p>名称：ナイト<br>
+                                            コマの動き：チェスのナイト<br>
+                                            (縦横2マス+横縦1マス)
+                                        </p>
+                                    </div>
+                                    <div class="works-popup">
+                                        <img width="200px" src="../img/実習/プリンセス.png">
+                                        <img width="200px" src="../img/実習/プリンセス_動き方.png">
+                                        <p>名称:プリンセス<br>
+                                            コマの動き:将棋の馬(角の裏)<br>
+                                            (斜めすべてのマスもしくは縦横1マス)
+                                        </p>
+                                    </div>
+                                    <div class="works-popup">
+                                        <img width="200px" src="../img/実習/メイド.png">
+                                        <img width="200px" src="../img/実習/メイド_動き方.png">
+                                        <p>名称:メイド<br>
+                                            コマの動き:前or横1コマ
+                                        </p>
+                                    </div>
+                                </div>
+                                <h4>カードの使い方</h4>
+                                <p>・ゲーム開始時、ボードにカードが6枚ランダムに配置される<br>
+                                    ・プレイヤーは6種類のカードを一枚ずつ所持<br>
+                                    ・各ターン初めに一枚、ボードにカードを配置できる。<br>
+                                    ・カードははじめ裏側で配置し、使うとき表になる。裏側のカードはすべてのプレイヤーが踏めるが、表になった自分のカードは踏めず、相手が踏むと相手がそのカードを獲得できる。<br>
+                                    ・カードは裏にそれぞれのプレイヤーカラーが施され、自分のモノになった相手のカードは色が自分の色になる。<br>
+                                    ・同種類のコマがカードに乗った場合、カードはオープンしない。三体目のコマがカードに乗ったとき、カードがオープン、バトルになる。</p>
+                                <h4>カードの種類</h4>
+                                <div class="grid-popup">
+                                    <div>
+                                        <img class="works" width="200px" src="../img/実習/カード2.png">
+                                        <p>・給仕(メイド>ナイト>プリンセス>皇帝)<br>
+                                            ・訓練(ナイト>プリンセス>皇帝>メイド)<br>
+                                            ・公務(プリンセス>皇帝>ナイト>メイド)<br>
+                                            ・行政(皇帝>プリンセス>ナイト>メイド)<br>
+                                            ・男子禁制(プリンセス>メイド>ナイト>皇帝)<br>
+                                            ・女子禁制(皇帝>ナイト>プリンセス>メイド)
+                                        </p>
+                                    </div>
+                                </div>
+                                <h4>制作メンバー</h4>
+                                <p>
+                                    1F10190279 滝野澤泉<br>
+                                    1F10190249 長谷川瑛美<br>
+                                    1F10190210 川合晃市<br>
+                                    1F10190224 堀雅登<br>
+                                    1F10190268 大和田響生<br>
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr>
+                    <h4>二次創作</h4>
+                    <div class="grid">
+                        <a href="../img/flarenewvisual.png" data-lightbox="derivativework"><img class="works"
+                                width="200px" src="../img/flarenewvisual.png"></a>
+                        <a href="../img/flare.png" data-lightbox="derivativework"><img class="works" width="200px"
+                                src="../img/flare.png"></a>
+                        <a href="../img/footprintsofzero.png" data-lightbox="derivativework"><img class="works"
+                                width="200px" src="../img/footprintsofzero.png"></a>
+                        <a href="../img/la+.png" data-lightbox="derivativework"><img class="works" width="200px"
+                                src="../img/la+.png"></a>
+                        <a href="../img/shirona.png" data-lightbox="derivativework"><img class="works" width="200px"
+                                src="../img/shirona.png"></a>
+                        <a href="../img/miku.png" data-lightbox="derivativework"><img class="works" width="200px"
+                                src="../img/miku.png"></a>
+                        <a href="../img/okayu.png" data-lightbox="derivativework"><img class="works" width="200px"
+                                src="../img/okayu.png"></a>
+                        <a href="../img/ironman.png" data-lightbox="derivativework"><img class="works" width="200px"
+                                src="../img/ironman.png"></a>
+                        <a href="../img/image.png" data-lightbox="derivativework"><img class="works" width="200px"
+                                src="../img/image.png"></a>
+                        <a href="../img/カートししろん1.jpg" data-lightbox="derivativework"><img class="works" width="200px"
+                                src="../img/カートししろん1.jpg"></a>
+                    </div>
+                    <hr>
+                    <h4>3D作品</h4>
+                    <div class="grid">
+                        <a href="../img/monsterball.png" data-lightbox="3D" data-title="あああ"><img class="works"
+                                width="200px" src="../img/monsterball.png"></a>
+                        <a href="../img/pool (1).png" data-lightbox="3D"><img class="works" width="200px"
+                                src="../img/pool (1).png"></a>
+                        <a href="../img/flareroom2.png" data-lightbox="3D"><img class="works" width="200px"
+                                src="../img/flareroom2.png"></a>
+                        <a href="../img/markofzero3.png" data-lightbox="3D"><img class="works" width="200px"
+                                src="../img/markofzero3resize.png"></a>
+                    </div>
+                    <hr>
+                    <h4>映像作品</h4>
+                    <div class="grid">
+                        <video autoplay muted playsinline preload="none" class="works" width="400px"
+                            src="../movie/phony.mp4"></video>
+                    </div>
+                </div>
+
+                <hr color="black" size="8px">
+                <a id="profile">
+                    <h3>Profile</h3>
+                </a>
+                <div class="media-left">
+                    <img src="../img/IMG_3361.jpeg" width="300px">
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">滝野澤 泉 Izumi Takinosawa</h4>
+                    <div class="text">
+                        <p>大学:東洋大学情報連携学部情報連携学科</p>
+                        <h5>スキル</h5>
+                        <p class="text-break">使用可能ツール:illustrator、photoshop、After Effects、Clip
+                            Studio、Blender、Fusion360、Unity、MMD</p>
+                        <p class="text-break">プログラミング:Python、HTML、JavaScript、CSS、C#</p>
+                    </div>
+                </div>
+                <hr color="black" size="8px">
+                <a id="contact">
+                    <h3>Contact</h3>
+                </a>
+                <form method="post" action="">
+                    <div class="form-group">
+                        <input type="email" name="email" class="form-control" placeholder="メールアドレス">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="name" class="form-control" placeholder="お名前">
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="4" cols="50" placeholder="お問い合わせ内容" name="text" type="text"
+                            class="form-control"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-outline-primary">送信</button>
+                </form>
+                <hr>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
